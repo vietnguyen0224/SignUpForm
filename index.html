@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <title>Sign Up Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="./images/download.png" alt="logo">
+            <h1>SIGN-UP FORM</h1>
+        </div>
+        <div class="form">
+            <div class="div1">
+                <p>This is not a real form!!!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus natus incidunt sapiente
+                commodi placeat id, dicta necessitatibus neque iure iste fugiat ratione rem deserunt, soluta cum, iusto cumque
+                voluptatem sit.</p>
+            </div>
+            <div class="div2">
+                <h3>Fill in the form!</h3>
+                <form action="#" id="createAccount">
+                    <fieldset>
+                        <div class="line">
+                            <div class="info">
+                                <label for="firstName">FIRST NAME</label>
+                                <input type="text" id="firstName" name="firstName">
+                            </div>
+                            <div class="info">
+                                <label for="lastName">LAST NAME</label>
+                                <input type="text" id="lasttName" name="lastName">
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="info">
+                                <label for="email">EMAIL</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                            <div class="info">
+                                <label for="phone">PHONE NUMBER</label>
+                                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" id="phone" name="phone">
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="info">
+                                <label for="pw">PASSWORD</label>
+                                <input type="password" id="pw" name="pw" required>
+                                <p id="alert"></p>
+                            </div>
+                            <div class="info">
+                                <label for="cfmPw">CONFIRM PASSWORD</label>
+                                <input 
+                                    type="password" 
+                                    id="cfmPw" 
+                                    name="cfmPw" 
+                                    onkeyup = "verifyPw()"
+                                    required>
+                            </div>
+                        </div>
+                        </label>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="div3">
+                <button 
+                    type="submit" 
+                    form="createAccount"
+                    id="btn" 
+                >
+                CREATE ACCOUNT
+                </button>
+                <p>Already have an account? <span><a href="#">Log in</a></span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

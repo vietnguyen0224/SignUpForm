@@ -1,0 +1,138 @@
+:root {
+    --bg-img: url('./images/background.jpg');
+    --bg-color: rgba(242, 210, 189, 0.7);
+    --form-bg-1: rgba(128, 128, 128, 0.5);
+    --form-bg-2: rgba(128, 128, 128, 0.9);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: logoFont, sans-serif;
+}
+
+body {
+    background: var(--bg-img) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@font-face {
+    font-family: logoFont;
+    src: url('./Norse-Bold.otf');
+}
+
+h1 {
+    font-size: 48px;
+}
+.logo {
+    flex: 1;
+    position: sticky;
+    bottom: 35rem;
+    background-color: var(--bg-color);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 25%;
+    height: 25%;
+}
+
+.form {
+    flex: 2;
+    background-color: var(--bg-color);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div1, .div2, .div3 {
+    flex: 1;
+    width: 100%;
+    padding: 2rem;
+}
+
+.div1, .div3 {
+    background-color: var(--form-bg-1);
+}
+
+.div2 {
+    background-color: var(--form-bg-2);
+}
+
+.div1 {
+    font-size: 30px;
+    text-align: left;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.line {
+    display: flex;
+    gap: 20px;
+}
+
+.info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#btn {
+    padding: 20px;
+    font-size: 20px;
+    border: solid 1px;
+    border-radius: 8px;
+    background-color: var(--bg-color);
+}
+
+.div3 > p {
+    font-size: 30px;
+}
+
+.div3 > p > span > a {
+    color: rgb(242, 210, 189);
+    text-decoration: none;
+}
+
+input {
+    border: solid 1px #E5E7EB;
+    border-radius: 4px;
+    padding: 12px 20px;
+    outline: none;
+}
+
+input:focus {
+    border: solid 1px blue;
+    box-shadow: 2px 2.5px var(--bg-color) ;
+}
+
+#pw:invalid, #cfmPw:invalid {
+    border:solid 1px red;
+}
+
+#alert {
+    margin: 0;
+    color: red;
+}
+
